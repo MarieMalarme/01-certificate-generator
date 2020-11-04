@@ -1,0 +1,19 @@
+canvas {
+  margin-top: 50px;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+#button-save {
+  margin-left: 20px;
+  cursor: pointer;
+  font-family: 'Arial';
+  font-size: 14px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  background: #ab50ff;
+  padding: 3px 10px;
+}

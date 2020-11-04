@@ -33,10 +33,16 @@ inputs.map((name) => {
 
 const button_save = document.querySelector('#button-save')
 button_save.addEventListener('click', (e) => {
+  const student_name = document.querySelector('#input-name').value
+  const file_name = `01_certificate-${student_name
+    .replace(/\./g, '')
+    .split(' ')
+    .join('_')}`
+  button_save.setAttribute('download', file_name)
   const image = canvas
     .toDataURL('image/png')
     .replace('image/png', 'image/octet-stream')
-  window.location.href = image
+  e.target.href = image
 })
 
 const display_image = () => {
