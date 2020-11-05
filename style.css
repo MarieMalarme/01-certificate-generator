@@ -17,3 +17,8 @@ canvas {
   background: #ab50ff;
   padding: 3px 10px;
 }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url(./IBMPlexMono-Light.ttf);
+}

@@ -6,11 +6,6 @@ const h = 1240
 canvas.width = w
 canvas.height = h
 
-const font = new FontFace(
-  'IBM Plex Mono',
-  'url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap)',
-)
-
 const image = new Image()
 image.src = './image.jpg'
 image.onload = () => display_image()
@@ -22,10 +17,10 @@ inputs.map((name) => {
     context.clearRect(0, 0, w, h)
     display_image()
     context.fillStyle = 'white'
-    context.font = '90px IBM Plex Mono'
+    context.font = '90px ibm-plex-sans'
     display_text('name', 520, 695)
     display_text('level', 520, 1020)
-    context.font = '35px IBM Plex Mono'
+    context.font = '35px ibm-plex-sans'
     display_text('xp', 155, 980)
     display_text('date', 155, 660)
   })
