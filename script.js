@@ -32,7 +32,7 @@ button_save.addEventListener('click', (e) => {
   const file_name = `01_certificate-${student_name
     .replace(/\./g, '')
     .split(' ')
-    .join('_')}`
+    .join('_')}.jpg`
   button_save.setAttribute('download', file_name)
   const image = canvas
     .toDataURL('image/png')
